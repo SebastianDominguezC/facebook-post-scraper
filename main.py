@@ -9,8 +9,10 @@ posts = []
 user = ''
 password = ''
 
+user_to_scrape = ''
+
 try:
-    for post in get_posts('magnoliaespacios', pages=50, credentials=(user, password)):
+    for post in get_posts(user_to_scrape, pages=50, credentials=(user, password)):
         # Post id and create dir for media
         id = post['post_id']
         os.mkdir(f'./media/{id}', 0o777)
