@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+bin
+lib
+media
+data.json
+pyvenv.cfg
+.DS_Store
